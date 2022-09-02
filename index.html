@@ -22,7 +22,7 @@
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container-fluid c-nav">
             <a class="navbar-brand" href="#"><img src="/logo.png" width="90" height="50" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -32,10 +32,11 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                 <!-- SEARCH BAR  -->
-                <div class="mx-lg-3 p-0 border-0 input-group" style="width: 40%;">
+                <div class="mx-lg-3 p-0 border-0 input-group search" style="width: 40%;">
                     <input type="search" class="form-control py-2" placeholder="Find services" aria-label="Search"
                         aria-describedby="basic-addon2">
-                    <span class="input-group-text bg-dark text-light px-3" id="basic-addon2"> <i class="bi bi-search"></i>
+                    <span class="input-group-text bg-dark text-light px-3" id="basic-addon2"> <i
+                            class="bi bi-search"></i>
                     </span>
                 </div>
 
@@ -64,7 +65,8 @@
                             <a class="nav-link" href="#">Sign in</a>
                         </li>
                     </ul>
-                    <button class="btn btn-outline-success px-3 border-1 btn-hover " type="submit" style="outline-color: #1DBF73; color: #1DBF73; font-weight: 450;">JoIn</button>
+                    <button class="btn btn-outline-success px-3 border-1 btn-hover " type="submit"
+                        style="outline-color: #1DBF73; color: #1DBF73; font-weight: 450;" onclick="login()">JoIn</button>
                 </form>
 
 
@@ -75,7 +77,231 @@
 
     <hr class="m-0">
 
+    <!-- DROPDOWN  -->
 
+    <div class="container-fluid">
+        <div class="row " style="margin: 0px 30px;">
+            <div class="col d-flex justify-content-evenly py-2"
+                style="list-style-type: none;font-weight: 400; color: #74767e;">
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Graphics & Design
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item py-2 fw-semibold">Logo & Brand Identity</a></li>
+                        <li><a class="dropdown-item" href="#">Logo Design</a></li>
+                        <li><a class="dropdown-item" href="#">Brand Style Guides</a></li>
+                        <li><a class="dropdown-item" href="#">Fonts & Typography</a></li>
+                        <li><a class="dropdown-item" href="#">Business Card & Stationery</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown ">
+                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Digital Marketing
+                    </a>
+                    <ul class="dropdown-menu">
+                        <div class="d-flex ">
+                            <div class="col-6">
+                                <li><a class="dropdown-item" href="#">Social Media Marketing</a></li>
+                                <li><a class="dropdown-item" href="#">Social Media Advertising</a></li>
+                                <li><a class="dropdown-item" href="#">SEO</a></li>
+                                <li><a class="dropdown-item" href="#">Local SEO</a></li>
+                                <li><a class="dropdown-item" href="#">Marketing Strategy</a></li>
+                            </div>
+                            <div class="col-6">
+                                <li><a class="dropdown-item" href="#">Marketing Advice</a></li>
+                                <li><a class="dropdown-item" href="#">Display Advertising</a></li>
+                                <li><a class="dropdown-item" href="#">Influencer Marketing</a></li>
+                                <li><a class="dropdown-item" href="#">Affiliate Marketing</a></li>
+                            </div>
+                        </div>
+
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Writing & Translation
+                    </a>
+                    <ul class="dropdown-menu">
+                        <div class="d-flex ">
+                            <div class="col-4">
+                                <li><a class="dropdown-item" href="#">Article & Blog Post</a></li>
+                                <li><a class="dropdown-item" href="#">Translation</a></li>
+                                <li><a class="dropdown-item" href="#">Resume Writing</a></li>
+                                <li><a class="dropdown-item" href="#">Cover Letters</a></li>
+                            </div>
+                            <div class="col-4">
+                                <li><a class="dropdown-item" href="#">Book & eBook Writing</a></li>
+                                <li><a class="dropdown-item" href="#">Book Editing</a></li>
+                                <li><a class="dropdown-item" href="#">Podcast Writing</a></li>
+                                <li><a class="dropdown-item" href="#">Creative Writing</a></li>
+                            </div>
+                            <div class="col-4">
+                                <li><a class="dropdown-item" href="#">Jobs Descriptions </a></li>
+                                <li><a class="dropdown-item" href="#">White Papers</a></li>
+                                <li><a class="dropdown-item" href="#">Website Content</a></li>
+                                <li><a class="dropdown-item" href="#">Press Releases</a></li>
+                            </div>
+                        </div>
+                    </ul>
+
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Video & Animation
+                    </a>
+                    <ul class="dropdown-menu">
+                        <div class="d-flex ">
+                            <div>
+                                <li><a class="dropdown-item" href="#">Video Editing</a></li>
+                                <li><a class="dropdown-item" href="#">Short Video Ads</a></li>
+                                <li><a class="dropdown-item" href="#">Character Animation</a></li>
+                                <li><a class="dropdown-item" href="#">Visual Effect</a></li>
+                                <li><a class="dropdown-item" href="#">Logo Animation</a></li>
+                            </div>
+                            <div>
+                                <li><a class="dropdown-item" href="#">3D Product Animation</a></li>
+                                <li><a class="dropdown-item" href="#">Social Medias Videos</a></li>
+                                <li><a class="dropdown-item" href="#">Corporate Videos</a></li>
+                                <li><a class="dropdown-item" href="#">Meditation Videos</a></li>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Music & Audio
+                    </a>
+                    <ul class="dropdown-menu">
+                        <div class="d-flex ">
+                            <div>
+                                <li><a class="dropdown-item" href="#">Voice Over</a></li>
+                                <li><a class="dropdown-item" href="#">Songwriter</a></li>
+                                <li><a class="dropdown-item" href="#">Beat Maker</a></li>
+                                <li><a class="dropdown-item" href="#">Sound Design</a></li>
+                            </div>
+                            <div>
+                                <li><a class="dropdown-item" href="#">Audio Editing</a></li>
+                                <li><a class="dropdown-item" href="#">Podcast Editing</a></li>
+                                <li><a class="dropdown-item" href="#">DJ Mixing</a></li>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Programming & Tech
+
+                    </a>
+                    <ul class="dropdown-menu">
+                        <div class="d-flex ">
+                            <div>
+                                <li><a class="dropdown-item" href="#">Web Development</a></li>
+                                <li><a class="dropdown-item" href="#">WordPress</a></li>
+                                <li><a class="dropdown-item" href="#">Game Development</a></li>
+                                <li><a class="dropdown-item" href="#">Mobile Apps</a></li>
+                            </div>
+                            <div>
+                                <li><a class="dropdown-item" href="#">Covert Files</a></li>
+                                <li><a class="dropdown-item" href="#">User Testing</a></li>
+                                <li><a class="dropdown-item" href="#">Database</a></li>
+                                <li><a class="dropdown-item" href="#">Data processing</a></li>
+                                <li><a class="dropdown-item" href="#">Chatbots</a></li>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Business
+
+                    </a>
+                    <ul class="dropdown-menu">
+                        <div class="d-flex ">
+                            <div>
+                                <li><a class="dropdown-item" href="#">Virtual Assistant</a></li>
+                                <li><a class="dropdown-item" href="#">Market Research</a></li>
+                                <li><a class="dropdown-item" href="#">Sales</a></li>
+                                <li><a class="dropdown-item" href="#">Customer Care</a></li>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Lifestyle
+
+                    </a>
+                    <ul class="dropdown-menu">
+                        <div class="d-flex ">
+                            <div>
+                                <li><a class="dropdown-item" href="#">Online Tutoring</a></li>
+                                <li><a class="dropdown-item" href="#">Gaming </a></li>
+                                <li><a class="dropdown-item" href="#">Travelling</a></li>
+                                <li><a class="dropdown-item" href="#">Modeling & Acting</a></li>
+                                <li><a class="dropdown-item" href="#">Cooking Lessons</a></li>
+                                <li><a class="dropdown-item" href="#">Wellness</a></li>
+                                <li><a class="dropdown-item" href="#">Arts & Crafts</a></li>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Trending
+
+                    </a>
+                    <ul class="dropdown-menu">
+                        <div class="d-flex ">
+                            <div>
+                                <li><a class="dropdown-item" href="#">Data</a></li>
+                                <li><a class="dropdown-item" href="#">Image Editing</a></li>
+                                <li><a class="dropdown-item" href="#">Discord Services</a></li>
+                                <li><a class="dropdown-item" href="#">NFT Services</a></li>
+                                <li><a class="dropdown-item" href="#">Resume Writing</a></li>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+
+            </div>
+        </div>
+
+    </div>
+
+    <hr class="m-0">
+
+    <div class="position-relative">
+        <div class="position-absolute top-0 start-50 translate-middle">
+            <div class="row mx-auto" id="signInPopup" style="display: none; width: 240px; height: 120px;">
+                <i class="bi bi-x-lg" onclick="dismiss()"></i>
+                <div class="col-5">
+                    <h1>Hello</h1>
+                </div>
+            </div>            
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <img src="/img.avif" alt="" style="height: 650px;width: 100%;">
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="main.js"></script>
 
     <!-- BOOTSTRAP JAVA SCRIPTFILE  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"

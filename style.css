@@ -37,28 +37,20 @@ body {
     .dropdown .dropdown-menu.show {
         display: none !important;
     }
-
+    
 }
 
-@media screen and (min-width : 1200) {
-    .container-fluid {
-        margin-left: 60px;
-        margin-right: 60px;
+@media screen and (min-width : 1461px) {
+    .c-nav {
+        margin-left: 60px !important;
+        margin-right: 40px !important;
+    }
+}
+@media screen and (min-width : 1231px) and (max-width: 1342px) {
+    .search{
+        width: 30% !important;
     }
 }
 
-@media screen and (min-width : 1000) {
-    .container-fluid {
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-}
-
-@media screen and (-width : 700) {
-    .container-fluid {
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-}
 
 /* <div class="col-auto me-5"><li class="nav-item dropdown"><a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown </a><ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><hr class="dropdown-divider"></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></li></div><div class="col-auto"><li class="nav-item dropdown"><a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown </a><ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Action</a></li><li><a class="dropdown-item" href="#">Another action</a></li><li><hr class="dropdown-divider"></li><li><a class="dropdown-item" href="#">Something else here</a></li></ul></li></div> */
