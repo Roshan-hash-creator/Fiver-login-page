@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700&display=swap');
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -63,23 +63,52 @@ body {
 }
 
 .divider>span::before {
-    border-top: 1px solid rgb(204, 204, 204);
+    border-top: 1px solid rgb(235, 234, 234);
     content: "";
     display: table-cell;
     position: relative;
     top: 0.8em;
-    width: 42%;
+    width: 45%;
     /* height: 1px; */
 }
 
 .divider>span::after {
-    border-top: 1px solid rgb(204, 204, 204);
+    border-top: 1px solid rgb(235, 234, 234);
     content: "";
     display: table-cell;
     position: relative;
     top: 0.8em;
-    width: 42%;
+    width: 45%;
 }
+.pad-btn{
+    padding: 12px 30px 12px 16px;
+}
+
+/* FOOTER  */
+.column ul{
+    padding: 0px;
+}
+.column ul li {
+    list-style: none;
+    padding-bottom: 16px;
+}
+.column ul li a{
+    text-decoration: none;
+    font-size: 100%;
+    color: #74767e;
+    cursor: pointer;
+}
+.column ul li a:hover{
+    text-decoration: underline;
+}
+.title{
+    font-size: 16px;
+    color: #404145;
+    margin-bottom: 20px;
+}
+
+
+
 @media screen and (min-width : 993px) {
     .dropdown:hover .dropdown-menu {
         display: block !important;

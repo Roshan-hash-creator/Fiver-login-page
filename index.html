@@ -282,50 +282,73 @@
     </div>
 
     <hr class="m-0">
-    <div class="row abc" id="signInPopup" style="display: block;">
+    <div class="row abc" id="signInPopup" style="display: none;">
         <div class="col-5 cab p-0">
             <i class="bi bi-x-lg float-end p-2 bg-danger text-light" onclick="dismiss()"></i>
             <div class="header" style="padding: 0 36px 22px;
             ">
-            <div class="titile m-0 " style="padding: 32px 0px;">
-                <h4 class="text-center" style="font-size: 24px; color: #404145;">Join Fiverr </h4>
-            </div>
-                
-                <div class="col d-grid gap-3">
-                    <button class="col-12 btn btn-primary">
-                        <span></span>
-                        Continue with Facebook</button>
-                    <button class="col-12 btn btn-primary">
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                            width="48" height="48"
-                            viewBox="0 0 48 48"
-                            style=" fill:#000000;"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"></path><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"></path><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"></path><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"></path></svg>
-                        </span>
-                        Continue with Google</button>
-                    <button class="col-12 btn btn-primary">
-                        <span></span>
-                        Continue with Apple</button>
+                <div class="titile m-0 " style="padding: 32px 0px;">
+                    <h4 class="text-center" style="font-size: 24px; color: #404145;">Join Fiverr </h4>
                 </div>
+
+                <div class="col d-grid gap-3">
+                    <!-- Facebook  -->
+                    <button class="col-12 pad-btn btn border d-flex align-items-center justify-content-between"
+                        style="background-color: #4267b2; color: white;">
+                        <span><i class="bi bi-facebook"></i></span>
+                        <p class="m-0" style="padding-right: 4rem;">Continue with Facebook</p>
+                    </button>
+                    <!-- Google  -->
+                    <button class="col-12 pad-btn btn border d-flex align-items-center justify-content-between">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48"
+                                style=" fill:#000000;">
+                                <path fill="#FFC107"
+                                    d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z">
+                                </path>
+                                <path fill="#FF3D00"
+                                    d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z">
+                                </path>
+                                <path fill="#4CAF50"
+                                    d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z">
+                                </path>
+                                <path fill="#1976D2"
+                                    d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z">
+                                </path>
+                            </svg>
+                        </span>
+                        <p class="m-0" style="padding-right: 5rem;">Continue with Google</p>
+                    </button>
+                    <!-- Apple  -->
+                    <button class="col-12 pad-btn btn border d-flex align-items-center justify-content-between">
+                        <span><i class="bi bi-apple"></i></span>
+                        <p class="m-0" style="padding-right: 5rem;">Continue with Apple</p>
+                    </button>
+
+                </div>
+
                 <div class="divider m-0 mb-4">
-                    <span>
+                    <span style="font-size: 14px; letter-spacing: 0; font-weight: bold;">
                         OR
                     </span>
                 </div>
 
                 <div class="d-grid gap-3 mb-4" role="Input">
-                    <input class="form-control me-2" type="email" placeholder="Enter your email" aria-label="Input">
-                    <button class="btn" id="signInbtn" style="background-color: #1dbf73; color: white; padding: 7px 0px;">Continue</button>
+                    <input class="form-control me-2" type="email" placeholder="Enter your email" aria-label="Input"
+                        style="padding: 8px 12px;">
+                    <button class="btn" id="signInbtn"
+                        style="background-color: #1dbf73; color: white; padding: 7px 0px;">Continue</button>
                 </div>
 
-                <p style="font-size: 13px; text-align: center; margin: 0;">By joining I agree to receive emails from
+                <p style="font-size: 14px; text-align: center; margin: 0;">By joining I agree to receive emails from
                     Fiverr.</p>
 
             </div>
 
             <hr class="w-100 m-0">
-            <div class="footer py-3" >
-                <p class="m-0 text-center " style="font-size: 14px;">Already a member? <span style="color: #1dbf73; cursor: pointer;">Sign In</span></p>
+            <div class="footer py-3">
+                <p class="m-0 text-center " style="font-size: 14px;">Already a member? <span
+                        style="color: #1dbf73; cursor: pointer;">Sign In</span></p>
             </div>
         </div>
     </div>
@@ -335,6 +358,91 @@
         <div class="row">
             <div class="col-12">
                 <img src="/img.avif" alt="" style="height: 650px;width: 100%;">
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER  -->
+    <div class="container">
+        <div class="row d-flex justify-content-start" style="padding: 64px 0px 0px 24px;">
+
+            <div class="col-lg-2 col-md-4 d-grid column">
+                <div class="title ">
+                    <h5>Categories</h5>
+                </div>
+
+                <ul>
+                    <li><a href="#">Graphics & Design</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                    <li><a href="#">Writing & Translation</a></li>
+                    <li><a href="#">Video & Animation</a></li>
+                    <li><a href="#">Music & Audio</a></li>
+                    <li><a href="#">Programming & Tech</a></li>
+                    <li><a href="#">Data</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Lifestyle</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-4 column">
+                <div class="title">
+                    <h5>About</h5>
+                </div>
+
+                <ul>
+                    <li><a href="#">Help & Support</a></li>
+                    <li><a href="#">a</a></li>
+                    <li><a href="#">b</a></li>
+                    <li><a href="#">c</a></li>
+                    <li><a href="#">d</a></li>
+                    <li><a href="#">e</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-4 column">
+                <div class="title">
+                    <h5>About</h5>
+                </div>
+
+                <ul>
+                    <li><a href="#">Help & Support</a></li>
+                    <li><a href="#">a</a></li>
+                    <li><a href="#">b</a></li>
+                    <li><a href="#">c</a></li>
+                    <li><a href="#">d</a></li>
+                    <li><a href="#">e</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-4 column">
+                <div class="title">
+                    <h5>About</h5>
+                </div>
+
+                <ul>
+                    <li><a href="#">Help & Support</a></li>
+                    <li><a href="#">a</a></li>
+                    <li><a href="#">b</a></li>
+                    <li><a href="#">c</a></li>
+                    <li><a href="#">d</a></li>
+                    <li><a href="#">e</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-4 column">
+                <div class="title">
+                    <h5>About</h5>
+                </div>
+
+                <ul>
+                    <li><a href="#">Help & Support</a></li>
+                    <li><a href="#">a</a></li>
+                    <li><a href="#">b</a></li>
+                    <li><a href="#">c</a></li>
+                    <li><a href="#">d</a></li>
+                    <li><a href="#">e</a></li>
+                </ul>
             </div>
         </div>
     </div>
