@@ -36,7 +36,7 @@ body {
     left: 0;
 }
 
- .cab {
+.cab {
     max-height: 90vh;
     max-width: 600px;
     position: relative;
@@ -80,35 +80,104 @@ body {
     top: 0.8em;
     width: 45%;
 }
-.pad-btn{
+
+.pad-btn {
     padding: 12px 30px 12px 16px;
 }
-.pad-btn:hover{
+
+.pad-btn:hover {
     background-color: #e2e2e2;
 }
 
 /* FOOTER  */
-.column ul{
+.column ul {
     padding: 0px;
 }
+
 .column ul li {
     list-style: none;
     padding-bottom: 16px;
 }
-.column ul li a{
+
+.column ul li a {
     text-decoration: none;
     font-size: 100%;
     color: #74767e;
     cursor: pointer;
 }
-.column ul li a:hover{
+
+.column ul li a:hover {
     text-decoration: underline;
 }
-.title{
+
+.title {
     font-size: 16px;
     color: #404145;
     margin-bottom: 20px;
 }
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo,
+.btm-right,
+.social,
+.btm-right ul {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+}
+
+.btm-right {}
+
+.logo > img{
+    opacity: .5;
+}
+
+.logo>p {
+    margin: 8px 0 0 20px;
+}
+.social{
+    gap: 13px;
+}
+.social i{
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+}
+.social i:hover, .btm-right ul li a:hover{
+    background-color: #e2e2e2;
+}
+.btm-right > ul li {
+    list-style: none;
+}
+.btm-right > ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px;
+    cursor: pointer;
+    color: #404145;
+    font-weight: 500;
+    border-radius: 54px;
+}
+.bi-globe{
+    padding-right: 3px;
+}
+.access{
+    font-size: 22px;
+    margin: 0;
+    margin-top: 2px;
+}
+.access i{
+    margin-left: 15px;
+    cursor: pointer;
+}
+
 
 @media screen and (min-width : 993px) {
     .dropdown:hover .dropdown-menu {
@@ -123,11 +192,11 @@ body {
         display: none !important;
     }
 
-    .f-group{
+    .f-group {
         display: flex;
         justify-content: space-between;
 
-    } 
+    }
 }
 
 @media screen and (min-width : 1461px) {
